@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <!-- Rozpoczęcie dokumentu HTML -->
+
+  <head>
+    <!-- Nagłówek dokumentu -->
+
+    <title>Form Styling</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta
+      name="description"
+      content="Strona przedstawia zastosowanie formatowania tekstu"
+    />
+    <meta name="keywords" content="HTML5" />
+    <meta name="autor" content="Michał Gigachad Kwiatkowski" />
+    <meta name="generator" content="VISUAL STUDIO CODE" />
+
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/9c23b081ed.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <form action="#">
+      <fieldset>
+        <legend>Dane kontaktowe</legend>
+
+        <!-- imie -->
+        <label for="imie"> Imię <em>*</em></label>
+        <div class="icon-form">
+          <i class="fa-solid fa-user"></i>
+          <input id="imie" placeholder="Janina" autofocus required /><br />
+        </div>
+
+        <!-- nazwisko -->
+        <label for="nazwisko"> Nazwisko <em>*</em></label>
+        <div class="icon-form">
+          <i class="fa-solid fa-address-card"></i>
+          <input id="nazwisko" placeholder="Kowalska" required /><br />
+        </div>
+
+        <!-- telefon -->
+        <label for="telefon"> Nr telefonu</label>
+        <div class="icon-form">
+          <i class="fa-solid fa-phone"></i>
+          <input id="telefon" placeholder="(+48) xxx-xxx-xxx" /><br />
+        </div>
+
+        <!-- email -->
+
+        <label for="email"> E-mail <em>*</em></label>
+        <div class="icon-form">
+          <i class="fa-solid fa-envelope"></i>
+          <input
+            id="email"
+            type="email"
+            required
+            placeholder="email@example.com"
+          /><br />
+        </div>
+
+        <p class="description-bottom">
+          Proszę wypełnić ten formularz. <br />
+          Obowiązkowe pola oznaczono znakiem
+          <em>*</em>
+        </p>
+      </fieldset>
+      
+    </form>
+  </body>
+</html>
